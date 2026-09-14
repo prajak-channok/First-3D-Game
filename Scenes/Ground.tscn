@@ -67,7 +67,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8xkpw")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_s7rlf"]
-radius = 1.0371094
+radius = 1.1352539
 
 [node name="Ground" type="Node3D" unique_id=596715549]
 transform = Transform3D(3.9312, 0, 0, 0, 0.39312, 0, 0, 0, 3.9312, 0.0200105, 4.76837e-07, 0.00302696)

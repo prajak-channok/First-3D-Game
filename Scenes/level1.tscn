@@ -226,8 +226,8 @@ texture = ExtResource("9_46gx6")
 transform = Transform3D(0.7660443, 0, 0.64278746, 0, 1, 0, -0.64278746, 0, 0.7660443, -11.486885, 8.028003, -7.6078568)
 modulate = Color(0, 0, 0, 1)
 text = "W-A-S-D  to move
-SPACE to JUMP
-
+SPACE to JUMP 
+or double jump
 Let's Go!!"
 font = SubResource("SystemFont_om7om")
 font_size = 250
