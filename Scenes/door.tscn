@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dsn03h7dtm345"]
+
+[ext_resource type="Script" uid="uid://dx7enyt2us8rq" path="res://Scripts/door.gd" id="1_p0e35"]
+[ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://Assets/Resources/cloud.res" id="1_w6aom"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s7wsd"]
+size = Vector3(0.44555664, 0.97106934, 0.72320557)
+
+[node name="Door" type="Area3D" unique_id=1353704496]
+script = ExtResource("1_p0e35")
+next_scene = "uid://c0xe8m7yrl5td"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1333369598]
+mesh = ExtResource("1_w6aom")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2085013505]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=482524500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36566162, 0)
+shape = SubResource("BoxShape3D_s7wsd")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_body_entered"]
