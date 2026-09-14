@@ -30,7 +30,6 @@ GameManager="*res://Scripts/GameManager.gd"
 
 [display]
 
-window/size/mode=4
 window/size/always_on_top=true
 
 [filesystem]

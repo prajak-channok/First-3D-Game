@@ -11,7 +11,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oo8ef"]
 radius = 0.407547
-height = 1.37478
+height = 1.3632263
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bs2kd"]
 resource_name = "GobotMat"
@@ -2053,7 +2053,7 @@ script = ExtResource("1_t0xh4")
 jump_force = 6.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=329499746]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000624448, 0.675578, -0.00332153)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000624448, 0.6698011, -0.00332153)
 shape = SubResource("CapsuleShape3D_oo8ef")
 
 [node name="gobot" type="Node3D" parent="." unique_id=1258443013]

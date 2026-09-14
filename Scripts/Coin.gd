@@ -22,12 +22,10 @@ func _ready():
 	initial_position = position
 
 func _process(delta):
-	coin_hover(delta) # Call the coin_hover function
+	coin_hover(delta)
 	rotate_y(deg_to_rad(3))
 	
 	if is_in_range:
-		var tween = create_tween()
-		tween.tween_property(self, "scale", Vector3.ZERO, 0.4).set_ease(Tween.EASE_IN_OUT)
 		follow_player(delta)
 	
 # Coin Hover Animation
@@ -38,12 +36,13 @@ func coin_hover(delta):
 	position.y = new_y
 
 func follow_player(delta):
-	position += global_position.direction_to(player.global_position) * follow_speed * delta
+	var target = player.global_position
+	target.y -= 2
+	position += global_position.direction_to(target) * follow_speed * delta
 
 # ---------- SIGNALS ---------- #
 
 func _on_body_entered(body):
-	# Delete The Coin and Add Score
 	if body.is_in_group("Player"):
 		GameManager.add_score()
 		AudioManager.coin_sfx.play()

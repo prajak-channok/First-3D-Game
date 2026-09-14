@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cf0w0skqs3k64" path="res://Scenes/player.tscn" id="2_21dfl"]
 [ext_resource type="PackedScene" uid="uid://dfc0ecsjufu7v" path="res://Scenes/StoneGround.tscn" id="3_mj5wy"]
 [ext_resource type="Script" uid="uid://bpbjc2oxm2mpf" path="res://Scripts/DeadZone.gd" id="4_8ry15"]
-[ext_resource type="PackedScene" uid="uid://cf6w3nit800bl" path="res://Scenes/FakePlatformBlue.tscn" id="4_okl2h"]
+[ext_resource type="PackedScene" uid="uid://cf6w3nit800bl" path="res://Scenes/FakeStoneGround.tscn" id="4_okl2h"]
 [ext_resource type="PackedScene" uid="uid://bk5n0tn4k1l0c" path="res://Scenes/Coin.tscn" id="5_4fiv6"]
 [ext_resource type="PackedScene" uid="uid://dsn03h7dtm345" path="res://Scenes/door.tscn" id="5_rqhku"]
 [ext_resource type="Script" uid="uid://dxc4cdl3tsvrj" path="res://Scripts/GameManager.gd" id="6_8fvkd"]
@@ -145,7 +145,7 @@ transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.2827835, 3.5646362, 
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4.3498993, 3.4487944, -11.478214)
 
 [node name="Bush8" parent="Decorations" unique_id=1247758983 instance=ExtResource("6_cpkqv")]
-transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 16.805536, 7.319586, -24.896599)
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 18.882092, 7.1703663, -24.41198)
 
 [node name="Bush9" parent="Decorations" unique_id=1513847408 instance=ExtResource("6_cpkqv")]
 transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 14.025638, 8.341214, -8.851181)
@@ -235,10 +235,10 @@ uppercase = true
 [node name="Coins" type="Node3D" parent="." unique_id=1918484071]
 
 [node name="Coin1" parent="Coins" unique_id=846313206 instance=ExtResource("5_4fiv6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608013, 6.9618206, -25.157158)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608013, 6.9618206, -25.329374)
 
 [node name="Coin2" parent="Coins" unique_id=676434032 instance=ExtResource("5_4fiv6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7746696, 6.974497, -25.059647)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7746696, 6.974497, -25.276474)
 
 [node name="Coin3" parent="Coins" unique_id=431693572 instance=ExtResource("5_4fiv6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.025755, 10.147952, 2.1450286)
