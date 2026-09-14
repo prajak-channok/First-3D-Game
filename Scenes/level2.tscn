@@ -15,9 +15,19 @@
 [ext_resource type="Script" uid="uid://bblncv7qj864l" path="res://Scripts/GameUI.gd" id="13_pdvwv"]
 [ext_resource type="Texture2D" uid="uid://fb7nldcb0ngq" path="res://Assets/Textures/carrot.png" id="14_w46me"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bdr3p"]
+sky_top_color = Color(0.6156863, 0.74509805, 0.9254902, 1)
+sky_horizon_color = Color(0.7882353, 0.5254902, 0.34117648, 1)
+ground_bottom_color = Color(0.3019608, 0.627451, 1, 1)
+ground_horizon_color = Color(0.70980394, 0.6392157, 0.5764706, 1)
+
+[sub_resource type="Sky" id="Sky_u1b78"]
+sky_material = SubResource("ProceduralSkyMaterial_bdr3p")
+
 [sub_resource type="Environment" id="Environment_g4ka7"]
-background_mode = 1
+background_mode = 2
 background_color = Color(0.30378634, 0.6257113, 1, 1)
+sky = SubResource("Sky_u1b78")
 ambient_light_source = 2
 ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
 ambient_light_energy = 1.15

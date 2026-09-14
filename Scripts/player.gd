@@ -34,6 +34,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity") * 2
 
 # ---------- FUNCTIONS ---------- #
 
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 func _process(delta):
 	player_animations()
 	get_input(delta)
