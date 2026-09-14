@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c0xe8m7yrl5td"]
 
 [ext_resource type="PackedScene" uid="uid://cf0w0skqs3k64" path="res://Scenes/player.tscn" id="1_vn2uo"]
-[ext_resource type="PackedScene" uid="uid://0t0qb3qjq6my" path="res://Scenes/PlatformRed.tscn" id="2_mtqcm"]
-[ext_resource type="PackedScene" uid="uid://dfc0ecsjufu7v" path="res://Scenes/PlatformBlue.tscn" id="3_mmf1u"]
+[ext_resource type="PackedScene" uid="uid://0t0qb3qjq6my" path="res://Scenes/Ground.tscn" id="2_mtqcm"]
+[ext_resource type="PackedScene" uid="uid://dfc0ecsjufu7v" path="res://Scenes/StoneGround.tscn" id="3_mmf1u"]
 [ext_resource type="PackedScene" uid="uid://cf6w3nit800bl" path="res://Scenes/FakePlatformBlue.tscn" id="4_vn460"]
 [ext_resource type="Texture2D" uid="uid://hk3gj75327hy" path="res://Assets/Textures/Logo.png" id="5_r8hce"]
 [ext_resource type="PackedScene" uid="uid://bk5n0tn4k1l0c" path="res://Scenes/Coin.tscn" id="6_ca0bt"]

@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://cf6w3nit800bl"]
+[gd_scene format=4 uid="uid://dfc0ecsjufu7v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ot0lm"]
 resource_name = "Dirt"
@@ -37,7 +37,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_c4pdy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_e8tyb"]
 resource_name = "Island by J-Toastie - C03O8OQq6O_Island01_Cylinder-Mesh"
 _surfaces = [{
 "aabb": AABB(-0.446448, -0.009568, -0.441758, 0.88707197, 0.739634, 0.908454),
@@ -88,7 +88,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_kf6r6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3ba4q"]
 resource_name = "Stone Platform by J-Toastie - BfEpoctX5p_StonePlatform_Cylinder-Mesh"
 _surfaces = [{
 "aabb": AABB(-0.522767, -0.038844, -0.536211, 1.045534, 0.075244, 1.019321),
@@ -106,13 +106,21 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_tv01v")
 
-[node name="FakeStoneGround" type="Node3D" unique_id=1129814715]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_s7rlf"]
+radius = 1.27
+
+[node name="StoneGround" type="Node3D" unique_id=1995177098]
 transform = Transform3D(4.87857, 0, 0, 0, 1.08, 0, 0, 0, 4.87857, 0, 0, 0)
 
-[node name="Ground" type="MeshInstance3D" parent="." unique_id=265769690]
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=1717837523]
 transform = Transform3D(3, 0, 0, 0, 7, 0, 0, 0, 3, 0, -4.2, 0)
-mesh = SubResource("ArrayMesh_c4pdy")
+mesh = SubResource("ArrayMesh_e8tyb")
 
-[node name="Stone" type="MeshInstance3D" parent="." unique_id=1282470297]
+[node name="Stone" type="MeshInstance3D" parent="." unique_id=459040226]
 transform = Transform3D(1.4000001, 0, 0, 0, 1.4000001, 0, 0, 0, 1.4000001, 0.1, 1, 0.2)
-mesh = SubResource("ArrayMesh_kf6r6")
+mesh = SubResource("ArrayMesh_3ba4q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=305666301]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=459637939]
+shape = SubResource("CylinderShape3D_s7rlf")
