@@ -18,8 +18,6 @@ extends Node3D
 
 func _ready():
 	top_level = true
-	# Confining Mouse Cursor in the game view so it doesnt get in the way of gameplay
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 # Handling Camera Movement
 func _unhandled_input(event):

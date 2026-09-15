@@ -223,12 +223,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, -40)
 texture = ExtResource("9_46gx6")
 
 [node name="Features" type="Label3D" parent="Extras" unique_id=744839452]
-transform = Transform3D(0.7660443, 0, 0.64278746, 0, 1, 0, -0.64278746, 0, 0.7660443, -11.486885, 8.028003, -7.6078568)
+transform = Transform3D(0.57357633, 0, 0.8191519, 0, 1, 0, -0.8191519, 0, 0.57357633, -12.816514, 8.028003, -7.9005966)
 modulate = Color(0, 0, 0, 1)
 text = "W-A-S-D  to move
 SPACE to JUMP 
 or double jump
-Let's Go!!"
+Enter to Lock Mouse"
 font = SubResource("SystemFont_om7om")
 font_size = 250
 outline_size = 0
@@ -246,10 +246,10 @@ uppercase = true
 [node name="Coins" type="Node3D" parent="." unique_id=1918484071]
 
 [node name="Coin1" parent="Coins" unique_id=846313206 instance=ExtResource("5_4fiv6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608013, 6.9618206, -25.329374)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608013, 6.9618206, -25.643953)
 
 [node name="Coin2" parent="Coins" unique_id=676434032 instance=ExtResource("5_4fiv6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7746696, 6.974497, -25.276474)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7746696, 6.974497, -25.70683)
 
 [node name="Coin3" parent="Coins" unique_id=431693572 instance=ExtResource("5_4fiv6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.025755, 10.147952, 2.1450286)
