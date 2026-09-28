@@ -8,6 +8,7 @@
 [ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://Assets/Resources/cloud.res" id="6_nkgvq"]
 [ext_resource type="AudioStream" uid="uid://ncq6fpsrcmjh" path="res://Assets/Audio/SFX/walking.ogg" id="7_asqdb"]
 [ext_resource type="PackedScene" uid="uid://0v7p107l2fwc" path="res://Assets/Models/rabbit/rabbit.tscn" id="8_8erm5"]
+[ext_resource type="PackedScene" uid="uid://cwsrj3l2sks7a" path="res://Assets/Models/Dino/Dinosaur_Player4.fbx" id="9_f1ek2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oo8ef"]
 radius = 0.407547
@@ -2273,3 +2274,7 @@ autoplay = true
 
 [node name="rabbit" parent="." unique_id=185031759 instance=ExtResource("8_8erm5")]
 transform = Transform3D(-0.5, 0, 4.371139e-08, 0, 0.5, 0, -4.371139e-08, 0, -0.5, 0, 0, 0)
+visible = false
+
+[node name="Dinosaur_Player4" parent="." unique_id=1372163109 instance=ExtResource("9_f1ek2")]
+transform = Transform3D(-0.2, 0, -1.7484556e-08, 0, 0.2, 0, 1.7484556e-08, 0, -0.2, 0, -0.04897654, 0)

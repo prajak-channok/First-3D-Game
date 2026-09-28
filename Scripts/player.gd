@@ -22,8 +22,8 @@ var is_grounded = false
 var can_double_jump = false
 
 # Onready Variables
-@onready var model = $rabbit
-@onready var animation = $rabbit/AnimationPlayer
+@onready var model = $Dinosaur_Player4
+@onready var animation = $Dinosaur_Player4/AnimationPlayer
 @onready var spring_arm = %Gimbal
 
 @onready var particle_trail = $ParticleTrail
@@ -67,17 +67,17 @@ func perform_jump():
 	AudioManager.jump_sfx.pitch_scale = 1.12
 	
 	jumpTween()
-	animation.play("CharacterArmature|CharacterArmature|CharacterArmature|Jump")
+	animation.play("Armature|Jump")
 	velocity.y = jump_force
 
 func perform_flip_jump():
 	AudioManager.jump_sfx.play()
 	AudioManager.jump_sfx.pitch_scale = 0.8
-	animation.play("CharacterArmature|CharacterArmature|CharacterArmature|Jump", -1, 2)
+	animation.play("Armature|Jump", -1, 2)
 	velocity.y = jump_force
 	await animation.animation_finished
 	can_double_jump = false
-	animation.play("CharacterArmature|CharacterArmature|CharacterArmature|Jump", 0.5)
+	animation.play("Armature|Jump", 0.5)
 
 func is_moving():
 	return abs(velocity.z) > 0 || abs(velocity.x) > 0
@@ -106,8 +106,8 @@ func player_animations():
 	
 	if is_on_floor():
 		if is_moving(): # Checks if player is moving
-			animation.play("CharacterArmature|CharacterArmature|CharacterArmature|Run", 0.5)
+			animation.play("Armature|Walk", 0.5)
 			particle_trail.emitting = true
 			footsteps.stream_paused = false
 		else:
-			animation.play("CharacterArmature|CharacterArmature|CharacterArmature|Idle", 0.5)
+			animation.play("Armature|Idle2", 0.5)
